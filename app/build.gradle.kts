@@ -5,12 +5,12 @@ plugins {
 
 android {
     namespace = "com.example.material3ui"
-    compileSdk = 33
+    compileSdk = 34
 
     defaultConfig {
         applicationId = "com.example.material3ui"
         minSdk = 26
-        targetSdk = 33
+        targetSdk = 34
         versionCode = 1
         versionName = "1.0"
 
