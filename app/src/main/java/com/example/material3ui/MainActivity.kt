@@ -18,8 +18,12 @@ class MainActivity : ComponentActivity() {
         setContent {
             Material3UiTheme {
                 // A surface container using the 'background' color from the theme
-                Surface(modifier = Modifier.fillMaxSize(), color = MaterialTheme.colorScheme.background) {
+                Surface(
+                    modifier = Modifier.fillMaxSize(),
+                    color = MaterialTheme.colorScheme.background
+                ) {
 
+                    ButtonsScreen()
                 }
             }
         }
