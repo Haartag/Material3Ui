@@ -9,6 +9,7 @@ sealed class Screen(val route: String) {
     object MainScreen: Screen("main")
     object ButtonsScreen: Screen("buttons")
     object TextFieldsScreen: Screen("text_fields")
+    object SelectionScreen: Screen("selection")
 }
 
 @Composable
@@ -23,6 +24,9 @@ fun MainNavigation() {
         }
         composable(Screen.TextFieldsScreen.route) {
             TextFieldsScreen(mainNavController = mainNavController)
+        }
+        composable(Screen.SelectionScreen.route) {
+            SelectionScreen(mainNavController = mainNavController)
         }
     }
 }
