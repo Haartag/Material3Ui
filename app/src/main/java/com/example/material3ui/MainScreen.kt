@@ -28,5 +28,10 @@ fun MainScreen(
         }) {
             Text(text = "Buttons")
         }
+        FilledTonalButton(onClick = {
+            mainNavController.navigate(Screen.TextFieldsScreen.route)
+        }) {
+            Text(text = "Text Fields")
+        }
     }
 }

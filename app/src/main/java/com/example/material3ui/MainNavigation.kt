@@ -8,6 +8,7 @@ import androidx.navigation.compose.rememberNavController
 sealed class Screen(val route: String) {
     object MainScreen: Screen("main")
     object ButtonsScreen: Screen("buttons")
+    object TextFieldsScreen: Screen("text_fields")
 }
 
 @Composable
@@ -19,6 +20,9 @@ fun MainNavigation() {
         }
         composable(Screen.ButtonsScreen.route) {
             ButtonsScreen(mainNavController = mainNavController)
+        }
+        composable(Screen.TextFieldsScreen.route) {
+            TextFieldsScreen(mainNavController = mainNavController)
         }
     }
 }
