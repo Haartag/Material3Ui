@@ -48,5 +48,10 @@ fun MainScreen(
         }) {
             Text(text = "Bottom App Bar")
         }
+        FilledTonalButton(onClick = {
+            mainNavController.navigate(Screen.BottomNavigationBarScreen.route)
+        }) {
+            Text(text = "Bottom Navigation Bar")
+        }
     }
 }
