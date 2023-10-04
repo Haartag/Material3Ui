@@ -13,6 +13,7 @@ sealed class Screen(val route: String) {
     object TopAppBarScreen: Screen("top_app_bar")
     object BottomAppBarScreen: Screen("bottom_app_bar")
     object BottomNavigationBarScreen: Screen("bottom_navigation_bar")
+    object SwipeableTabRowsScreen: Screen("swipeable_tab_rows")
 }
 
 @Composable
@@ -39,6 +40,9 @@ fun MainNavigation() {
         }
         composable(Screen.BottomNavigationBarScreen.route) {
             BottomNavigationBarScreen(mainNavController = mainNavController)
+        }
+        composable(Screen.SwipeableTabRowsScreen.route) {
+            SwipeableTabRowsScreen(mainNavController = mainNavController)
         }
     }
 }

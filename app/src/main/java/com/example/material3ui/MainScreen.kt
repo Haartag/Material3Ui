@@ -53,5 +53,10 @@ fun MainScreen(
         }) {
             Text(text = "Bottom Navigation Bar")
         }
+        FilledTonalButton(onClick = {
+            mainNavController.navigate(Screen.SwipeableTabRowsScreen.route)
+        }) {
+            Text(text = "Swipeable tab rows")
+        }
     }
 }
