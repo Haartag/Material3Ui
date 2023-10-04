@@ -19,7 +19,7 @@ fun MainScreen(
     Column(
         modifier = Modifier
             .fillMaxSize()
-            .padding(vertical = 120.dp),
+            .padding(vertical = 100.dp),
         verticalArrangement = Arrangement.SpaceEvenly,
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
@@ -57,6 +57,11 @@ fun MainScreen(
             mainNavController.navigate(Screen.SwipeableTabRowsScreen.route)
         }) {
             Text(text = "Swipeable tab rows")
+        }
+        FilledTonalButton(onClick = {
+            mainNavController.navigate(Screen.BottomSheetScreen.route)
+        }) {
+            Text(text = "BottomSheet")
         }
     }
 }
